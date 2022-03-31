@@ -1,15 +1,14 @@
-body {width: 100vw; margin: 0; padding: 0;}
+body {width: 100vw; margin: 0; padding: 0; background: #F1E9D4}
 
 .header {
-    width: 100%;  background: #252628; color:white; 
+    width: 100%;  background: #0A1C3D; color:white; 
     display: flex; align-items: center; justify-content: center;}
 .container {margin: 2rem;}
 
 .logo {width: 100px;}
 .nav-container {width: calc(100% - 200px); display: flex; align-items: center; justify-content: flex-end;}
 .nav-container a {color: white; padding: 10px;}
-
-.hero {background-image: url('assets/bg.jpeg'); height: calc(100vh - 125px); background-size: cover; background-position: 0 0;}
+.home-intro {background-color: #204367; height: 100px;}
 .box-shadow {-webkit-box-shadow: 0px 5px 5px -2px #000000; 
     box-shadow: 0px 5px 5px -2px #000000;}
 
@@ -17,8 +16,12 @@ body {width: 100vw; margin: 0; padding: 0;}
     font-family: forma-djr-banner,sans-serif;
     font-weight: 600;
     font-style: normal;
+    letter-spacing: 2px;
+    box-sizing: border-box;
 }
 
+.hero {background-image: url('assets/grid.svg'); background-size: 100%; background-origin: 0 0; border-top: 1px solid #f1e9d4;}
+.hero-wrapper { width: 100%; background-image: url('assets/trim2.svg'); background-size: contain; background-position: 100% 100%; background-repeat: no-repeat;}
 
 .nav-container a {
     color: transparent;
@@ -32,5 +35,21 @@ body {width: 100vw; margin: 0; padding: 0;}
     text-decoration: none;
 }
 
+.home-intro {width: 100%; display: flex; align-items: center; justify-content: center; background: #204367;}
+.home-content {width: 80%; color: white;}
+.home-content-left {width: 70%;}
+
 .nav-container a:hover {color: white;}
 .nav-container  .active {color: white;}
+
+h1 {font-size: 72px; line-height: 72px; }
+h2 {font-size: 48px; line-height: 60px; font-weight: 600; letter-spacing: 2px;  }
+h3 {font-weight: 400; line-height: 24px;}
+button {background: none; border: 1px solid black; border-radius: 20px; padding: 5px 15px; font-size: 18px; font-weight: 200;}
+button:hover {border: 3px solid white; font-weight: 600; background-color: #204367; cursor: pointer; color: white;}
+
+.white-btn {background: none; border: 1px solid white; border-radius: 20px; padding: 5px 15px; font-size: 18px; font-weight: 200; color: white;}
+.white-btn:hover {border: 3px solid black; font-weight: 600; background-color: #EDA434; cursor: pointer; color: black;}
+
+
+.brand-slider {display: flex; align-items: center; justify-content: space-evenly;}
