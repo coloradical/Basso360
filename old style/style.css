@@ -1,17 +1,12 @@
 body {width: 100vw; margin: 0; padding: 0; background: #F1E9D4}
 
-header {
-    width: 100%;  color:white; height: 175px; 
-    display: flex; align-items: flex-start; justify-content: center;
-    background-image: url('assets/trim2.svg'); background-size: cover;
-}
-.container {margin: 3rem;}
-.logo-container {width: 100px;}
-.logo {width: 100%; }
-.social-span {width: 100px;  display: inline-flex; justify-content: flex-end;}
-.social-span a {padding: 0px 5px;}
-.header-container {height: 100px; width: 100%; display: inline-flex; align-items: center; justify-content: space-between; margin: 25px;}
-.nav-container { display: flex; align-items: center; justify-content: flex-end;}
+.header {
+    width: 100%;  background: #0A1C3D; color:white; 
+    display: flex; align-items: center; justify-content: center;}
+.container {margin: 2rem;}
+
+.logo {width: 100px;}
+.nav-container {width: calc(100% - 200px); display: flex; align-items: center; justify-content: flex-end;}
 .nav-container a {color: white; padding: 10px;}
 .home-intro {background-color: #204367; height: 100px;}
 .box-shadow {-webkit-box-shadow: 0px 5px 5px -2px #000000; 
@@ -25,33 +20,9 @@ header {
     box-sizing: border-box;
 }
 
-.hero {height: 70vh;}
+.hero {background-image: url('assets/grid.svg'); background-size: 100%; background-origin: 0 0; border-top: 1px solid #f1e9d4;}
 .hero-wrapper { width: 100%; background-image: url('assets/trim2.svg'); background-size: contain; background-position: 100% 100%; background-repeat: no-repeat;}
 
-.project-block {width: 25vw; height: 25vw; padding: 15px; display: flex; align-items: flex-end; justify-content: center; background-size: cover;}
-.project-block:hover {transform: scale(1.1); cursor: pointer;}
-.project-block h2 {background-color: white; padding: 5px;}
-.project-block:hover > h2 {background-color: rgba(0,0,0,0); color: white;}
-.vimeo-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-    overflow: hidden;
- }
- .vimeo-wrapper iframe {
-    width: 100vw;
-    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-    min-height: 100vh;
-    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
- }
 .nav-container a {
     color: transparent;
     -webkit-text-stroke-width: 2px;
