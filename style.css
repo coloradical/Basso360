@@ -1,9 +1,9 @@
 body {width: 100vw; margin: 0; padding: 0; background: #F1E9D4}
 
 header {
-    width: 100%;  color:white; height: 175px; 
+    width: 100%;  color:white; height: 150px; 
     display: flex; align-items: flex-start; justify-content: center;
-    background-image: url('assets/trim2.svg'); background-size: cover;
+    background-color: #204367;
 }
 .container {margin: 3rem;}
 .logo-container {width: 100px;}
@@ -25,7 +25,7 @@ header {
     box-sizing: border-box;
 }
 
-.hero {height: 70vh;}
+.hero {height: 80vh;}
 .hero-wrapper { width: 100%; background-image: url('assets/trim2.svg'); background-size: contain; background-position: 100% 100%; background-repeat: no-repeat;}
 
 .project-block {width: 25vw; height: 25vw; padding: 15px; display: flex; align-items: flex-end; justify-content: center; background-size: cover;}
@@ -46,8 +46,9 @@ header {
     width: 100vw;
     height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
     min-height: 100vh;
+    position: fixed;
     min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-    position: absolute;
+    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -82,3 +83,6 @@ button:hover {border: 3px solid white; font-weight: 600; background-color: #2043
 
 
 .brand-slider {display: flex; align-items: center; justify-content: space-evenly;}
+
+.press-block {margin-right: 25px; border: 0.1px solid black; padding: 50px 25px; max-width: 30%; text-align: center;}
+.press-block-wrapper {width: 100%; display: flex; align-items: flex-start; justify-content: flex-start;}
