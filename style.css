@@ -25,6 +25,9 @@ header {
     box-sizing: border-box;
 }
 
+.hoverme h2:hover {text-decoration: underline;}
+.hoverme:hover {transform: scale(1.1); cursor: pointer;}
+
 .hero {height: 80vh;}
 .hero-wrapper { width: 100%; background-image: url('assets/trim2.svg'); background-size: contain; background-position: 100% 100%; background-repeat: no-repeat;}
 
@@ -85,4 +88,12 @@ button:hover {border: 3px solid white; font-weight: 600; background-color: #2043
 .brand-slider {display: flex; align-items: center; justify-content: space-evenly;}
 
 .press-block {margin-right: 25px; border: 0.1px solid black; padding: 50px 25px; max-width: 30%; text-align: center;}
-.press-block-wrapper {width: 100%; display: flex; align-items: flex-start; justify-content: flex-start;}
+.press-block-wrapper {width: 100%; display: flex; align-items: flex-end; justify-content: flex-start;}
+
+footer {
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+}
+
