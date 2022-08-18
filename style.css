@@ -6,14 +6,16 @@
 
 @font-face {
     font-family: Nersans;
-    src: url(fonts/nersans/Nersans\ One.otf);
+    src: url(fonts/zuume_rough_fonts/ZuumeRough-Regular.otf);
+    
   }
 
-* {font-style: normal; box-sizing: border-box;}
+* {font-style: normal; box-sizing: border-box;     
+}
 
 body {width: 100vw; margin: 0; padding: 0; background: #F1E9D4}
-h1 {font-family: Nersans, sans-serif; font-size: 72px; line-height: 74px; margin: 0px!important;} /* SECTION TITLES */
-h2 {font-family: Nersans, sans-serif; font-size: 56px; line-height: 58px; margin: 0px!important;} /* Sub titles */
+h1 {font-family: Nersans, sans-serif; font-size: 72px; line-height: 74px; margin: 0px!important; text-transform: uppercase;} /* SECTION TITLES */
+h2 {font-family: Nersans, sans-serif; font-size: 56px; line-height: 58px; margin: 0px!important; text-transform: uppercase;} /* Sub titles */
 h3 {font-family: Nersans, sans-serif; font-size: 42px;  color: transparent; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: white; -webkit-text-stroke-width: 0.75px; letter-spacing: 2px} /* Section labels */
 h4 {font-family: Nersans, sans-serif; font-size: 24px; line-height: auto; background-color: white; padding: 0px!important; width: auto; } /* labels */
 h4:hover {background-color: rgba(0,0,0,0); color: white;}
