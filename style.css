@@ -1,30 +1,28 @@
+@import url("https://use.typekit.net/qfe5prt.css");
+
+
 @font-face {
     font-family: Addington;
     src: url(fonts/Brinnan\ Thin.otf);
     
   }
 
-@font-face {
-    font-family: Nersans;
-    src: url(fonts/bergen-text-2022-02-08-22-29-28-utc/BergenText-Bold.otf);
-    
-  }
 
 * {font-style: normal; box-sizing: border-box;     
 }
 
 body {width: 100vw; margin: 0; padding: 0; background: #F1E9D4}
-h1 {font-family: Nersans, sans-serif; font-size: 72px; line-height: 74px; margin: 0px!important; text-transform: uppercase;} /* SECTION TITLES */
-h2 {font-family: Nersans, sans-serif; font-size: 56px; line-height: 58px; margin: 0px!important; text-transform: uppercase;} /* Sub titles */
-h3 {font-family: Nersans, sans-serif; font-size: 42px;  color: transparent; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: white; -webkit-text-stroke-width: 0.75px; letter-spacing: 2px} /* Section labels */
-h4 {font-family: Nersans, sans-serif; font-size: 24px; line-height: auto; background-color: white; padding: 0px!important; width: auto; } /* labels */
+h1 {font-family: tablet-gothic-wide, sans-serif; font-size: 72px; line-height: 74px; margin: 0px!important;} /* SECTION TITLES */
+h2 {font-family: tablet-gothic-wide, sans-serif; font-size: 56px; line-height: 58px; margin: 0px!important; text-transform: uppercase;} /* Sub titles */
+h3 {font-family: tablet-gothic-wide, sans-serif; font-size: 42px;  color: transparent; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: white; -webkit-text-stroke-width: 0.75px; letter-spacing: 2px} /* Section labels */
+h4 {font-family: tablet-gothic-wide, sans-serif; font-size: 24px; line-height: auto; background-color: white; padding: 0px!important; width: auto; } /* labels */
 h4:hover {background-color: rgba(0,0,0,0); color: white;}
 
-h5 {font-family: Nersans, sans-serif; font-size: 24px; font-style: italic; } /* quotes */
-h6 {font-family: Addington, serif; font-weight: 100; font-size: 24px; letter-spacing: 2px; margin: 15px 0px;} /* bigger than paragraph text */
-p {font-family: Addington, serif; font-size: 22px;}
+h5 {font-family: tablet-gothic-wide, sans-serif; font-size: 24px; font-style: italic; } /* quotes */
+h6 {font-family: tablet-gothic-wide, sans-serif; font-weight: 200; font-size: 24px; margin: 15px 0px;} /* bigger than paragraph text */
+p {font-family: tablet-gothic-wide, sans-serif; font-size: 22px;}
 
-a {font-family: Nersans, sans-serif; }
+a {font-family: tablet-gothic-wide, sans-serif; }
 
 
 button {font-family: Nersans, sans-serif; background: none; border: 1px solid black; border-radius: 20px; padding: 5px 15px; font-size: 18px; font-weight: 200;}
@@ -35,7 +33,7 @@ button:hover {border: 1px solid white; font-weight: 600; background-color: #2043
 .hoverme:hover {transform: scale(1.1); cursor: pointer;}
 .container {margin: 3rem;}
 .centercenter {display: flex; align-items: center; justify-content: center; width: 100%;}
-.box-shadow {-webkit-box-shadow: 0px 5px 5px -2px #000000; box-shadow: 0px 5px 5px -2px #000000;}
+.box-shadow {-webkit-box-shadow: 0px 4px 4px -5px #000000; box-shadow: 0px 4px 4px -5px #000000;}
 .text-shadow {  text-shadow: 0px 0px 3px gray;
 }
 
@@ -45,7 +43,7 @@ button:hover {border: 1px solid white; font-weight: 600; background-color: #2043
 @media only screen and (max-width: 1000px){
     .half-container-wrapper {flex-wrap: wrap;}
     h1 {font-size: 52px; line-height: 58px; }
-    h2 {font-size: 48px;} /* Sub titles */
+    h2 {font-size: 48px; align-items:} /* Sub titles */
     h3 {font-size: 42px;  color: transparent; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: white; -webkit-text-stroke-width: 0.75px; letter-spacing: 2px} /* Section labels */
     h4 {font-size: 24px; background-color: white; padding: 5px; } /* labels */
     h6 { font-weight: 100; font-size: 24px; letter-spacing: 2px;} 
@@ -60,23 +58,31 @@ button:hover {border: 1px solid white; font-weight: 600; background-color: #2043
 /* -------------------------------------------------------------------------------------------------------- */
 /* Header Section */
 
-header {
-    width: 100%; height: 150px; 
-    display: flex; align-items: cneter; justify-content: flex-end;
-    background-color: #F1E9D4;
-}
-.header-container {max-height: 100px; width: 100%; display: inline-flex; align-items: center; justify-content: flex-end; margin: 25px;}
-.nav-container { display: flex; align-items: center; justify-content: flex-end; width: 100%;}
-
-
-
-.logo {height: 100px; }
-.nav-item {color: transparent; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: #204367; font-weight: 900; -webkit-text-stroke-width: 0.75px; font-size: 24px; letter-spacing: 1.5px; white-space: nowrap;  text-decoration: none; padding: 10px;}
-.nav-item:hover {color: #204367; transform: scale(1.05)}
-.active {color: #204367; text-decoration: underline;}
-
-.social-span {width: 100px;  display: inline-flex; justify-content: flex-end;}
+#main-header {background-color: #F1E9D4; width: 100%; padding: 25px 50px; display: block;}
+.header-content {width: 100%; height: 100px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;}
+#main-logo {width: 20%; display: flex; align-items: flex-start; justify-content: flex-start;}
+#mobile-menu {width: 50%; text-align: right;}
+#main-logo img:hover {transform: scale(1.1); cursor: pointer;}
+#nav-container {width: 75%; height: 100%;  }
+.nav-container-content {display: inline-flex; height: 100%; width: 100%; align-items: center; justify-content: flex-end; flex-wrap:wrap;}
+.nav-item {color: #204367; opacity: 0.35; font-weight: 700; font-size: 22px; white-space: nowrap;  text-decoration: none; padding: 10px; text-align: center; line-height: 0px;}
+/* .nav-item {color: transparent; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: #204367; font-weight: 700; -webkit-text-stroke-width: 1px; font-size: 22px; letter-spacing: 1.65px; white-space: nowrap;  text-decoration: none; padding: 10px; text-align: center; line-height: 0px;} */
+.active {opacity: 1!important; color: #021752!important;}
+.nav-item:hover {color: #204367; transform: scale(1.05); opacity: 1;}
+.active {color: #204367; }
+.social-span {width: 75px; height: 50px;display: inline-flex; justify-content: center; align-items: center;}
 .social-span a {padding: 0px 5px;}
+.nav-break {display: none;}
+
+@media only screen and (max-width: 950px){
+  #nav-container {width: 100%; display: none}
+  .nav-item {width: 100%!important;}
+  .logo-menu-container {width: 100%;}
+  #mobile-menu {display: block!important;}
+  .social-span {width: 100%;}
+  #main-header {padding: 25px;}
+}
+
 
 /* -------------------------------------------------------------------------------------------------------- */
 /* Hero Section */
