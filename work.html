@@ -1,131 +1,224 @@
 <!DOCTYPE html>
-<html lang="en" style="max-width: 100vh; overflow-x: hidden;">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basso360 Consulting</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    
-    
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Basso360 - Work</title>
+  <link rel="stylesheet" href="combo.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </head>
-  <body>
-    <header id="main-header" class="box-shadow">
-      <div class="header-content">
-        
-        <span id="main-logo"><img onclick="location.href='../index.html';"
-          style="height: 100px; width: auto;" src="assets/360basso-motto.png"/></span>
-        <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
-    
-        <div id="nav-container">
-          <div class="nav-container-content">
-            <a class="nav-item" href="">Home</a>
-            <a class="active nav-item" href="">Work</a>
-            <a class="nav-item" href="">Approach</a>
-            <a class="nav-item" href="">Team</a>
-            <a class="nav-item" href="">Contact</a>
-            <!-- <span class="social-span">
-              <a class="hoverme" href=""><img style="height: 18px;" src="assets/linkedin.svg"></a>
-              <a class="hoverme" href=""><img style="height: 18px;" src="assets/facebook.svg"></a>
-            </span> -->
+
+</head>
+<body>
+
+  <header id="main-header" class="box-shadow">
+    <div class="header-content">
+      
+      <span id="main-logo"><img onclick="location.href='../index.html';"
+        style="height: 100px; width: auto;" src="assets/360basso-motto.png"/></span>
+      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
+  
+      <div id="nav-container">
+        <div class="nav-container-content">
+          <a class="nav-item" href="index.html">Home</a>
+          <a class="active nav-item" href="work.html">Work</a>
+          <a class="nav-item" href="">Approach</a>
+          <a class="nav-item" href="">Team</a>
+          <a class="nav-item" href="">Contact</a>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+
+  <section id="work-title">
+    <div>
+        <h4 style="font-size: 62px;">Work</h4>
+    </div>  
+  </section>
+
+  <section id="work-hero">
+
+    <div class="filter-btns-wrapper">
+      <p>Filter by Project Type</p>
+      <div class="filter-btns-container">
+        <button class="filter-btns" onclick="toggleFilter('work-project'), toggleFilterButton(0)" class="active-cat">All Projects </button>
+        <button class="filter-btns" onclick="toggleFilter('cat1'), toggleFilterButton(1)" >Print</button>
+        <button class="filter-btns" onclick="toggleFilter('cat2'), toggleFilterButton(2)">Digital</button>
+        <button class="filter-btns" onclick="toggleFilter('cat3'), toggleFilterButton(3)">Something Else</button>
+
+
+      </div>
+    </div>
+
+    <div class="work-container-wrapper">
+      <div class="work-container">
+        <div class="work-project active-project cat1">
+          <h3 class="feature-num">01</h3>          
+          <div class="work-project-wrapper">
+            <div class="work-project-title">
+              <h3>Project Title</h3>
+            </div>
+            <div class="work-project-summary" style="color: white;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>
+            </div>
+            <button class="toggle-project-btn" >Button</button>
           </div>
+  
+        </div>
+        <div class="work-project minimized-project cat1">
+          <h3 class="feature-num">02</h3>     
+          <div class="work-project-wrapper">
+            <div class="work-project-title">
+              <h3>Project Title</h3>
+            </div>
+            <div class="work-project-summary" style="color: white;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>
+            </div>
+            <button class="toggle-project-btn" >Button</button>
+          </div>
+          
+        </div>
+        <div class="work-project minimized-project cat1">
+          <h3 class="feature-num">03</h3>     
+          <div class="work-project-wrapper">
+            <div class="work-project-title">
+              <h3>Project Title</h3>
+            </div>
+            <div class="work-project-summary" style="color: white;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>
+            </div>
+            <button class="toggle-project-btn" ><a href="index.html">Click MEEE</a></button>
+          </div>
+  
+        </div>
+
+        <div class="work-project minimized-project cat2">
+          <h3 class="feature-num">04</h3>     
+          <div class="work-project-wrapper">
+            <div class="work-project-title">
+              <h3>Project Title</h3>
+            </div>
+            <div class="work-project-summary" style="color: white;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>
+            </div>
+            <button class="toggle-project-btn" ><a href="index.html">Click MEEE</a></button>
+          </div>
+  
+        </div>
+
+        <div class="work-project minimized-project cat2">
+          <h3 class="feature-num">05</h3>     
+          <div class="work-project-wrapper">
+            <div class="work-project-title">
+              <h3>Project Title</h3>
+            </div>
+            <div class="work-project-summary" style="color: white;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>
+            </div>
+            <button class="toggle-project-btn" ><a href="index.html">Click MEEE</a></button>
+          </div>
+  
+        </div>
+
+        <div class="work-project minimized-project cat2">
+          <h3 class="feature-num">06</h3>     
+          <div class="work-project-wrapper">
+            <div class="work-project-title">
+              <h3>Project Title</h3>
+            </div>
+            <div class="work-project-summary" style="color: white;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>
+            </div>
+            <button class="toggle-project-btn" ><a href="index.html">Click MEEE</a></button>
+          </div>
+  
         </div>
         
-      </div>
-    </header>
 
-      <section class="container">
-        <h1>Work</h1>
-      </section>
-
-      
-
-      <section>
-        <div class="project-block-container centercenter">
-            <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1511270246349-0b80cc6f8035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
-            </div>
-            
-            <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1511270246349-0b80cc6f8035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
-            </div>
-            <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1645523906563-fc903cb51333?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80');">
-            </div>
-            <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1511269724072-3a756248b8f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
-            </div>
-    
-    
-          </div>
-
-      </section>
-
-      <section>
-        <div class=" white-text container" style="display: flex; align-items: flex-start; justify-content: center;">
-            
-            <div style="padding-right: 25px; color: black;">
-                <p>Lorem ipsum dolor sit amet, no mei enim eius vivendo, agam summo duo id. Cum ea bonorum repudiare, mea ne vidit laoreet quaestio, id vim reque placerat. Id nec sanctus vivendum sadipscing, labore convenire explicari eum ea. Melius feugiat consulatu sed in, sea at fugit facete audiam. Solum salutatus efficiendi vix id, nusquam luptatum ne ius.</p>
-              </div>
-              <div style="color: black;">
-                <p>Lorem ipsum dolor sit amet, no mei enim eius vivendo, agam summo duo id. Cum ea bonorum repudiare, mea ne vidit laoreet quaestio, id vim reque placerat. Id nec sanctus vivendum sadipscing, labore convenire explicari eum ea. Melius feugiat consulatu sed in, sea at fugit facete audiam. Solum salutatus efficiendi vix id, nusquam luptatum ne ius.</p>
-                <br><button>&rarr; Next Project</button>
-              </div>
-          </div>
-      </section>
-
-      <div style="display: flex; justify-content: center; align-items: flex-end;  height: 350px;  color: white;  background-image: url('../assets/trim3.svg'); background-size: cover; background-repeat: no-repeat;">
-        <span style="text-align: center; margin: 25px 0px;">
-            <h2 class="text-shadow">Browse Projects</h2><br>
-            <button>View All Work</button>
+        <span id="next-feature" class="hoverme" onclick='toggleFeature()'>
+          &rarr;
         </span>
         
-    </div>
-      <div class="project-block-container centercenter">
-        <div class="project-block" id="project1-block" onclick="( window.location = 'projects/beldon.html')">
-            <h4>Beldon Leaf Guard</h4>
-        </div>
-        
-        <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1511270246349-0b80cc6f8035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
-            <h4>Project 2</h4>
-        </div>
-        <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1645523906563-fc903cb51333?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80');">
-            <h4>Project 3</h4>
-        </div>
-        <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1511269724072-3a756248b8f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
-            <h4>Project 4</h4>
-        </div>
-
-
+  
       </div>
+    </div>
+  </section>
 
-      <footer style="padding: 2rem; height: 300px; width: 100%; display: inline-flex; justify-content: space-between; align-items: center;">
-        
-        <div style="width: 200px;">
-          <a class="active" href="">Home</a><br>
-          <a href="">Work</a><br>
-          <a href="">Approach</a><br>
-          <a href="">Team</a><br>
-          <a href="">Contact</a><br>
-          <br>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
-          <span style="color: white; width: calc(100% - 150px); text-align: center;">
-            <h6>Copyright &copy; Basso360, 2022</h6>
-            <span style="height: 50px; display: flex; align-items: center; justify-content: center; ">
-              <a href=""><img style="height: 20px" src="../assets/linkedin.svg"></a>&nbsp;&nbsp;
-              <a href=""><img style="height: 20px" src="../assets/facebook.svg"></a>
-            </span>
-          </span>
-          
-          
-          <img src="../assets/Basso360-white.png" class="logo" alt="CB360 logo in white" style="width: 150px;">
-        </div>
-        
+  <section style="background-color: #1F4265">
 
-      </footer>
+  </section>
 
-  </body>
+
+</body>
+
+<script>
+  function toggleFeature(){
+  var featuredProjects = document.getElementsByClassName('work-project');
+  for (let i = 0; i < featuredProjects.length; i++){
+    if (featuredProjects[i].classList.contains("active-project")){
+      var active = i;
+    }
+  }
+
+  if (featuredProjects.length - 1 > active){
+    featuredProjects[active].classList.remove("active-project");
+    featuredProjects[active].classList.add ("minimized-project");
+    featuredProjects[active+1].classList.add ("active-project");
+  } else if (featuredProjects.length > active) {
+    featuredProjects[active].classList.remove("active-project");
+    active = 0; 
+    featuredProjects[active].classList.add ("minimized-project");
+    featuredProjects[active].classList.add ("active-project");
+  }
+}
+
+const allProjects = Array.from(document.querySelectorAll('.feature-num'));
+allProjects.forEach(project => {
+  project.addEventListener('click', function(){
+    toggleFeature(this)
+  });
+});
+
+function toggleFilter(category){
+  var category;
+  console.log(category)
+  var featuredProjects = document.getElementsByClassName('work-project');
+
+
+  for (let i = 0; i < featuredProjects.length; i++){
+    if (featuredProjects[i].classList.contains(category)){
+      featuredProjects[i].style.display = "block";
+      featuredProjects[i].classList.remove("active-project");
+      featuredProjects[i].classList.add ("minimized-project");
+    } else {
+      featuredProjects[i].style.display = "none";
+    }
+  }
+  
+  var newFiltered = document.getElementsByClassName(category);
+  newFiltered[0].classList.add ("active-project");
+  console.log(newFiltered)
+}
+
+function toggleFilterButton(num){
+  var num;
+  var filterButtons = document.getElementsByClassName('filter-btns');
+  for (let i = 0; i < filterButtons.length; i++){
+    filterButtons[i].classList.remove('active-cat');
+  }
+  console.log(filterButtons);
+  filterButtons[num].classList.add ('active-cat');
+}
+
+
+var page = document.querySelector('body');
+
+page.addEventListener('scroll', function(){
+  console.log("scroll much? ")
+})
+
+</script>
+
 </html>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
