@@ -64,4 +64,24 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("main-header").style.height = "75px";
+    document.getElementById("main-header").style.backgroundColor = "#091D3D";
+    document.getElementById("main-logo-img").src = "assets/basso360-white.png";
+    var navItems = document.getElementsByClassName('nav-item');
+    for (let i = 0; i < navItems.length; i++){
+      navItems[i].style.color = "white";
+    }
+
+  } else {
+    document.getElementById("main-header").style.height = "150px";
+    document.getElementById("main-header").style.backgroundColor = "#F1E9D4";
+    document.getElementById("main-logo-img").src = "assets/360basso-motto.png";
+    var navItems = document.getElementsByClassName('nav-item');
+    for (let i = 0; i < navItems.length; i++){
+      navItems[i].style.color = "#204367";
+    }
+  }
+}
 

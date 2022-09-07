@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Basso360 - Work</title>
+  <link rel="stylesheet" href="combo.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+  <header id="main-header" class="box-shadow">
+    <div class="header-content">
+      <span id="main-logo"><img id="main-logo-img" onclick="location.href='index.html';" 
+        src="assets/360basso-motto.png"/></span>
+      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
+  
+      <div id="nav-container">
+        <div class="nav-container-content">
+          <a class="nav-item" href="index.html">Home</a>
+          <a class="nav-item" href="work.html">Work</a>
+          <a class="active nav-item" href="approach.html">Approach</a>
+          <a class="nav-item" href="team.html">Team</a>
+          <a class="nav-item" href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+
+  <section id="team-hero">
+    <h1>Approach</h1>
+  </section>
+
+
+
+
+
+
+
+  
+
+</body>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("main-header").style.height = "75px";
+    document.getElementById("main-header").style.backgroundColor = "#021752";
+    document.getElementById("main-logo-img").src = "assets/basso360-white.png";
+    var navItems = document.getElementsByClassName('nav-item');
+    for (let i = 0; i < navItems.length; i++){
+      navItems[i].style.color = "white";
+    }
+
+  } else {
+    document.getElementById("main-header").style.height = "150px";
+    document.getElementById("main-header").style.backgroundColor = "#F1E9D4";
+    document.getElementById("main-logo-img").src = "assets/360basso-motto.png";
+    var navItems = document.getElementsByClassName('nav-item');
+    for (let i = 0; i < navItems.length; i++){
+      navItems[i].style.color = "#204367";
+    }
+  }
+}
+
+</script>
+
+
+</html>

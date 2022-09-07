@@ -18,22 +18,17 @@
   <body>
     <header id="main-header" class="box-shadow">
       <div class="header-content">
-        
-        <span id="main-logo"><img onclick="location.href='../index.html';"
-          style="height: 100px; width: auto;" src="assets/360basso-motto.png"/></span>
+        <span id="main-logo"><img id="main-logo-img" onclick="location.href='index.html';" 
+          src="assets/360basso-motto.png"/></span>
         <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
     
         <div id="nav-container">
           <div class="nav-container-content">
             <a class="active nav-item" href="">Home</a>
             <a class="nav-item" href="work.html">Work</a>
-            <a class="nav-item" href="">Approach</a>
-            <a class="nav-item" href="">Team</a>
-            <a class="nav-item" href="">Contact</a>
-            <!-- <span class="social-span">
-              <a class="hoverme" href=""><img style="height: 18px;" src="assets/linkedin.svg"></a>
-              <a class="hoverme" href=""><img style="height: 18px;" src="assets/facebook.svg"></a>
-            </span> -->
+            <a class="nav-item" href="approach.html">Approach</a>
+            <a class="nav-item" href="team.html">Team</a>
+            <a class="nav-item" href="contact.html">Contact</a>
           </div>
         </div>
         
@@ -41,30 +36,34 @@
     </header>
     
     
-
-      <div class="hero">
+    <div class="hero">
         <div class="vimeo-wrapper">
-            <iframe src="https://player.vimeo.com/video/76979871?background=1&autoplay=1&loop=1&byline=0&title=0"
-                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          
-          <div class="hero-overlay">
-           <h1 class="white-text text-shadow" id="title-span-1">Surround-Sound, Multi-Screen Marketing</h1><h1 class="text-shadow" id="title-span-2">100% Trackable Results</h1>
-          </div>
-
+            <iframe src="https://player.vimeo.com/video/76979871?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>  
     </div>
+    <div class="hero-overlay">
+      <span>
+        <h2><span class="text-span-1">Surround-Sound, Multi-Screen Marketing</span>
+          <br><span class="text-span-2">100% Trackable Results</span></h2>
+      </span>
       
+    </div>
+    <div class="hero-trim">
+      <div class="arrow bounce"></div>
+    </div>
       <div class="hero-intro">
+        
         <div class="container" style="padding-bottom: 100px;">
           <br>
-          <h2 class="white-text" style="line-height: 50px; ">16 years of <br><span style="font-style: italic; color: transparent; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: #ffffff; -webkit-text-stroke-width: 0.75px;">industry experience</span></h2><br>
+          <h2 class="white-text" style="line-height: 50px; font-size: 3rem;">16 years of
+            <br><span style="font-style: italic; color: transparent; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: #ffffff; -webkit-text-stroke-width: 0.75px;">Industry experience</span></h2><br>
           <div class="half-container-wrapper white-text">
             
             <div style="padding-right: 25px;">
-                <h6>Lorem ipsum dolor sit amet, no mei enim eius vivendo, agam summo duo id. Cum ea bonorum repudiare, mea ne vidit laoreet quaestio, id vim reque placerat. Id nec sanctus vivendum sadipscing, labore convenire explicari eum ea. Melius feugiat consulatu sed in, sea at fugit facete audiam. Solum salutatus efficiendi vix id, nusquam luptatum ne ius.</h6>
+                <p>Lorem ipsum dolor sit amet, no mei enim eius vivendo, agam summo duo id. Cum ea bonorum repudiare, mea ne vidit laoreet quaestio, id vim reque placerat. Id nec sanctus vivendum sadipscing, labore convenire explicari eum ea. Melius feugiat consulatu sed in, sea at fugit facete audiam. Solum salutatus efficiendi vix id, nusquam luptatum ne ius.</p>
               </div>
               <div>
-                <h6>Lorem ipsum dolor sit amet, no mei enim eius vivendo, agam summo duo id. Cum ea bonorum repudiare, mea ne vidit laoreet quaestio, id vim reque placerat. Id nec sanctus vivendum sadipscing, labore convenire explicari eum ea. Melius feugiat consulatu sed in, sea at fugit facete audiam. Solum salutatus efficiendi vix id, nusquam luptatum ne ius.</h6>
+                <p>Lorem ipsum dolor sit amet, no mei enim eius vivendo, agam summo duo id. Cum ea bonorum repudiare, mea ne vidit laoreet quaestio, id vim reque placerat. Id nec sanctus vivendum sadipscing, labore convenire explicari eum ea. Melius feugiat consulatu sed in, sea at fugit facete audiam. Solum salutatus efficiendi vix id, nusquam luptatum ne ius.</p>
               </div>
           </div>
         </div>
@@ -80,46 +79,46 @@
           </section>
        </div>
 
-        <div style="text-align: center; background: #204367; height: 500px; margin-top: -50px; color: white;  background-image: url('assets/trim3.svg'); background-size: cover; background-repeat: no-repeat;">
-            <h1 class="text-shadow" style="padding-top: 350px; line-height: 36px;">Recent Work</h1><br>
+        <div style="text-align: center; background: #204367; height: 500px; margin-top: -250px; color: white;  background-image: url('assets/trim3.svg'); background-size: cover; background-repeat: no-repeat;">
+            <h1 class="text-shadow" style="padding-top: 350px; line-height: 36px; padding-bottom: 25px;">Recent Work</h1><br>
             <button>View All Work</button>
         </div>
     </div>
 
-      <div style="display: flex; align-items: center; justify-content: center;">
+      <div class="home-project-grid">
 
-        <div class="project-block" id="project1-block" onclick="( window.location = 'projects/beldon.html')">
+        <div class="project-block" id="project1-block" onclick="( window.location = 'work.html')">
             <h4>Beldon Leaf Guard</h4>
         </div>
         
-        <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1511270246349-0b80cc6f8035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
+        <div class="project-block" onclick="( window.location = 'work.html')" style="background-image: url('https://images.unsplash.com/photo-1511270246349-0b80cc6f8035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
             <h4>Project 2</h4>
         </div>
-        <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1645523906563-fc903cb51333?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80');">
+        <div class="project-block" onclick="( window.location = 'work.html')" style="background-image: url('https://images.unsplash.com/photo-1645523906563-fc903cb51333?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80');">
             <h4>Project 3</h4>
         </div>
-        <div class="project-block" style="background-image: url('https://images.unsplash.com/photo-1511269724072-3a756248b8f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
+        <div class="project-block" onclick="( window.location = 'work.html')" style="background-image: url('https://images.unsplash.com/photo-1511269724072-3a756248b8f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
             <h4>Project 4</h4>
         </div>
 
 
       </div>
-      <div style="background-color: #F1E8D4; width: 100%; height: 100%; padding: 2rem 2rem 8rem 2rem;">
-        <br><h1 style="color: black;">Press</h1>
+      <div class="press-container">
+        <br><h1 style="color: black;">Press</h1><br>
         <div class="press-block-wrapper" >
-          <div class="press-block hoverme" >
+          <div class="press-block" >
             <h5>"This is a quote about how cool Cory is"</h5>
             <img src="https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png" style="width: 100px; text-align: center;"><br><br>
             <h6>-New York Times</h6>
             <button>Read More</button>
           </div>
-          <div class="press-block hoverme">
+          <div class="press-block">
             <h5>"This is a quote about how cool Cory is"</h5>
             <img src="https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png" style="width: 100px; text-align: center;"><br><br>
             <h6>-New York Times</h6>
             <button>Read More</button>
           </div>
-          <div style=" width: 40%; display: inline-flex; justify-content: flex-start; align-items: flex-end;" >
+          <div style="width: 100%; display: inline-flex; justify-content: flex-start; align-items: flex-end;" >
             <span class="hoverme" style="display: flex; align-items: center; justify-content: center;">
               <h2 class="hoverme" style="line-height: 0px; font-size: 24px;">READ MORE</h2> &nbsp; &nbsp;
               <img src="assets/right-arrow.svg" style="height: 100px;">
@@ -163,3 +162,4 @@
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script>window.onscroll = function() {scrollFunction()};</script>

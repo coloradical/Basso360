@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Basso360 - Work</title>
+  <link rel="stylesheet" href="combo.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="header-content">
+      <span id="main-logo"><img id="main-logo-img" onclick="location.href='index.html';" 
+        src="assets/360basso-motto.png"/></span>
+      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
+  
+      <div id="nav-container">
+        <div class="nav-container-content">
+          <a class="nav-item" href="index.html">Home</a>
+          <a class="nav-item" href="work.html">Work</a>
+          <a class="nav-item" href="approach.html">Approach</a>
+          <a class="active nav-item" href="team.html">Team</a>
+          <a class="nav-item" href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+
+  <section id="team-hero">
+    <h1>Meet the Basso360 Team</h1>
+  </section>
+
+  <section style="background-color: #1D3C5D; margin-top: -2px;">
+    <div class="about-cory-wrapper">
+        <img src="assets/cory-circle.png" style="width: 300px; height: 300px; margin-right: 50px;"/>
+        <span>
+            <h2>Cory Basso</h2>
+            <h6>Founder</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio, maxime iusto eaque in rem a sit ullam veritatis ipsam quaerat praesentium aspernatur quae perferendis, minima quidem! Excepturi, alias expedita?</p>
+        </span>
+    </div>
+  </section>
+
+  <section>
+      <div class="about-team-wrapper">
+          <div class="team-member">
+              <img class="team-portrait" src="assets/megan-circle.png"/>
+              <h2>Megan Byers</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error enim numquam quos vero reprehenderit ratione officia mollitia sit, ipsa omnis eveniet fugiat facilis accusantium ?</p>
+          </div>
+          <div class="team-member">
+            <img class="team-portrait" src="assets/megan-circle.png"/>
+            <h2>Erik Greenlee</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error enim numquam quos vero reprehenderit ratione officia mollitia sit, ipsa omnis eveniet fugiat facilis accusantium ?</p>
+            
+        </div>
+        <div class="team-member">
+            <img class="team-portrait" src="assets/megan-circle.png"/>
+            <h2>John Doe</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error enim numquam quos vero reprehenderit ratione officia mollitia sit, ipsa omnis eveniet fugiat facilis accusantium ?</p>
+        </div>
+
+      </div>
+  </section>
+
+
+
+
+
+  
+
+</body>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("main-header").style.height = "75px";
+    document.getElementById("main-header").style.backgroundColor = "#021752";
+    document.getElementById("main-logo-img").src = "assets/basso360-white.png";
+    var navItems = document.getElementsByClassName('nav-item');
+    for (let i = 0; i < navItems.length; i++){
+      navItems[i].style.color = "white";
+    }
+
+  } else {
+    document.getElementById("main-header").style.height = "150px";
+    document.getElementById("main-header").style.backgroundColor = "#F1E9D4";
+    document.getElementById("main-logo-img").src = "assets/360basso-motto.png";
+    var navItems = document.getElementsByClassName('nav-item');
+    for (let i = 0; i < navItems.length; i++){
+      navItems[i].style.color = "#204367";
+    }
+  }
+}
+
+</script>
+
+
+</html>
