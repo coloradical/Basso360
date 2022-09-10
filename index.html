@@ -15,150 +15,39 @@
     
 
   </head>
-  <body>
-    <header id="main-header" class="box-shadow">
-      <div class="header-content">
-        <span id="main-logo"><img id="main-logo-img" onclick="location.href='index.html';" 
-          src="assets/360basso-motto.png"/></span>
-        <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
+
+  <style>
+    .box {
+	background: linear-gradient(-45deg,  #23d5ab, #23a6d5, #204367, #091D3D);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  </style>
+ <body>
+   <div class="box" style="width: 100%; height: 100vh; overflow: hidden;  color: white; display: flex; align-items: center; justify-content: center;">
+    <span>
+      <span id="main-logo"><img style="width: 200px"
+        src="assets/basso360-white.png"/></span> <br>
+      <h1>Under Construction</h1>
+      <p style="text-align: center;">Check back soon!</p>
+    </span>
     
-        <div id="nav-container">
-          <div class="nav-container-content">
-            <a class="active nav-item" href="">Home</a>
-            <a class="nav-item" href="work.html">Work</a>
-            <a class="nav-item" href="approach.html">Approach</a>
-            <a class="nav-item" href="team.html">Team</a>
-            <a class="nav-item" href="contact.html">Contact</a>
-          </div>
-        </div>
-        
-      </div>
-    </header>
-    
-    
-    <div class="hero">
-        <div class="vimeo-wrapper">
-            <iframe src="https://player.vimeo.com/video/76979871?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>  
-    </div>
-    <div class="hero-overlay">
-      <span>
-        <h2><span class="text-span-1">Surround-Sound, Multi-Screen Marketing</span>
-          <br><span class="text-span-2">100% Trackable Results</span></h2>
-      </span>
-      
-    </div>
-    <div class="hero-trim">
-      <div class="arrow bounce"></div>
-    </div>
-      <div class="hero-intro">
-        
-        <div class="container" style="padding-bottom: 100px;">
-          <br>
-          <h2 class="white-text" style="line-height: 50px; font-size: 3rem;">16 years of
-            <br><span style="font-style: italic; color: transparent; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: #ffffff; -webkit-text-stroke-width: 0.75px;">Industry experience</span></h2><br>
-          <div class="half-container-wrapper white-text">
-            
-            <div style="padding-right: 25px;">
-                <p>Lorem ipsum dolor sit amet, no mei enim eius vivendo, agam summo duo id. Cum ea bonorum repudiare, mea ne vidit laoreet quaestio, id vim reque placerat. Id nec sanctus vivendum sadipscing, labore convenire explicari eum ea. Melius feugiat consulatu sed in, sea at fugit facete audiam. Solum salutatus efficiendi vix id, nusquam luptatum ne ius.</p>
-              </div>
-              <div>
-                <p>Lorem ipsum dolor sit amet, no mei enim eius vivendo, agam summo duo id. Cum ea bonorum repudiare, mea ne vidit laoreet quaestio, id vim reque placerat. Id nec sanctus vivendum sadipscing, labore convenire explicari eum ea. Melius feugiat consulatu sed in, sea at fugit facete audiam. Solum salutatus efficiendi vix id, nusquam luptatum ne ius.</p>
-              </div>
-          </div>
-        </div>
-
-        <div class="slider-container">
-          <section class="customer-logos slider">
-             <div class="slide"><img src="assets/brands/coors-2.svg"></div>
-             <div class="slide"><img src="assets/brands/capital-one-logo.svg" style="height: 90px; margin-top: 50px;"></div>
-             <div class="slide"><img src="assets/brands/farmers-insurance-group.svg"></div>
-             <div class="slide"><img src="assets/brands/heb.svg"></div>
-             <div class="slide"><img src="assets/brands/mazda-6.svg"></div>
-             <div class="slide"><img src="assets/brands/sony-2.svg"></div>
-          </section>
-       </div>
-
-        <div style="text-align: center; background: #204367; height: 500px; margin-top: -250px; color: white;  background-image: url('assets/trim3.svg'); background-size: cover; background-repeat: no-repeat;">
-            <h1 class="text-shadow" style="padding-top: 350px; line-height: 36px; padding-bottom: 25px;">Recent Work</h1><br>
-            <button>View All Work</button>
-        </div>
-    </div>
-
-      <div class="home-project-grid">
-
-        <div class="project-block" id="project1-block" onclick="( window.location = 'work.html')">
-            <h4>Beldon Leaf Guard</h4>
-        </div>
-        
-        <div class="project-block" onclick="( window.location = 'work.html')" style="background-image: url('https://images.unsplash.com/photo-1511270246349-0b80cc6f8035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
-            <h4>Project 2</h4>
-        </div>
-        <div class="project-block" onclick="( window.location = 'work.html')" style="background-image: url('https://images.unsplash.com/photo-1645523906563-fc903cb51333?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80');">
-            <h4>Project 3</h4>
-        </div>
-        <div class="project-block" onclick="( window.location = 'work.html')" style="background-image: url('https://images.unsplash.com/photo-1511269724072-3a756248b8f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')">
-            <h4>Project 4</h4>
-        </div>
-
-
-      </div>
-      <div class="press-container">
-        <br><h1 style="color: black;">Press</h1><br>
-        <div class="press-block-wrapper" >
-          <div class="press-block" >
-            <h5>"This is a quote about how cool Cory is"</h5>
-            <img src="https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png" style="width: 100px; text-align: center;"><br><br>
-            <h6>-New York Times</h6>
-            <button>Read More</button>
-          </div>
-          <div class="press-block">
-            <h5>"This is a quote about how cool Cory is"</h5>
-            <img src="https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png" style="width: 100px; text-align: center;"><br><br>
-            <h6>-New York Times</h6>
-            <button>Read More</button>
-          </div>
-          <div style="width: 100%; display: inline-flex; justify-content: flex-start; align-items: flex-end;" >
-            <span class="hoverme" style="display: flex; align-items: center; justify-content: center;">
-              <h2 class="hoverme" style="line-height: 0px; font-size: 24px;">READ MORE</h2> &nbsp; &nbsp;
-              <img src="assets/right-arrow.svg" style="height: 100px;">
-            </span>
-
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <footer style="padding: 2rem; height: 300px; width: 100%; display: inline-flex; justify-content: space-between; align-items: center;">
-        
-        <div style="width: 200px;">
-          <a class="active" href="">Home</a><br>
-          <a href="">Work</a><br>
-          <a href="">Approach</a><br>
-          <a href="">Team</a><br>
-          <a href="">Contact</a><br>
-          <br>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
-          <span style="color: white; width: calc(100% - 150px); text-align: center;">
-            <h6>Copyright &copy; Basso360, 2022</h6>
-            <span style="height: 50px; display: flex; align-items: center; justify-content: center; ">
-              <a href=""><img style="height: 20px" src="assets/linkedin.svg"></a>&nbsp;&nbsp;
-              <a href=""><img style="height: 20px" src="assets/facebook.svg"></a>
-            </span>
-          </span>
-          
-          
-          <img src="assets/Basso360-white.png" class="logo" alt="CB360 logo in white" style="width: 150px;">
-        </div>
-        
-
-      </footer>
-
-  </body>
+  </div>
+ </body>
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
