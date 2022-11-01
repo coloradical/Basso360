@@ -12,14 +12,14 @@
 </head>
 <body>
 
-  <header id="main-header" class="box-shadow">
-    <div class="header-content">
-      <span id="main-logo"><img id="main-logo-img" onclick="location.href='index.html';" 
-        src="assets/360basso-motto.png"/></span>
-      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
+  
+  <header id="main-header">
+    <div class="header-content" id="header-content">
+      <span id="main-logo"><img id="main-logo-img" onclick="location.href='home.html';" src="assets/360basso-motto.png"/></span>
+      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px;" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
   
       <div id="nav-container">
-        <div class="nav-container-content">
+        <div id="nav-container-content">
           <a class="nav-item" href="index.html">Home</a>
           <a class="nav-item" href="work.html">Work</a>
           <a class="active nav-item" href="approach.html">Approach</a>
@@ -27,9 +27,20 @@
           <a class="nav-item" href="contact.html">Contact</a>
         </div>
       </div>
-      
     </div>
   </header>
+
+  <div id="mobile-menu-dropdown" style="display: none; width: 100vw; height: calc(100vh - 150px);  background: #F1E9D4; position: absolute;">
+    <div style="height: 50%;margin-top: 10%; display: flex; align-items: center; justify-content: center;">
+      <div id="nav-container-content">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="work.html">Work</a>
+        <a class="active nav-item" href="approach.html">Approach</a>
+        <a class="nav-item" href="team.html">Team</a>
+        <a class="nav-item" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
 
   <section id="team-hero">
     <h1>Approach</h1>

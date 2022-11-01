@@ -7,19 +7,18 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <script src="index.js"></script>
 
 </head>
 <body>
 
   <header id="main-header">
-    <div class="header-content">
-      <span id="main-logo"><img id="main-logo-img" onclick="location.href='index.html';" 
-        src="assets/360basso-motto.png"/></span>
-      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
+    <div class="header-content" id="header-content">
+      <span id="main-logo"><img id="main-logo-img" onclick="location.href='home.html';" src="assets/360basso-motto.png"/></span>
+      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px;" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
   
       <div id="nav-container">
-        <div class="nav-container-content">
+        <div id="nav-container-content">
           <a class="nav-item" href="index.html">Home</a>
           <a class="nav-item" href="work.html">Work</a>
           <a class="nav-item" href="approach.html">Approach</a>
@@ -27,15 +26,26 @@
           <a class="nav-item" href="contact.html">Contact</a>
         </div>
       </div>
-      
     </div>
   </header>
 
+  <div id="mobile-menu-dropdown" style="display: none; width: 100vw; height: calc(100vh - 150px);  background: #F1E9D4; position: absolute;">
+    <div style="height: 50%;margin-top: 10%; display: flex; align-items: center; justify-content: center;">
+      <div id="nav-container-content">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="work.html">Work</a>
+        <a class="nav-item" href="approach.html">Approach</a>
+        <a class="active nav-item" href="team.html">Team</a>
+        <a class="nav-item" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
   <section id="team-hero">
-    <h1>Meet the Basso360 Team</h1>
+    <h1>Meet Basso360</h1>
   </section>
 
-  <section style="background-color: #1D3C5D; margin-top: -2px;">
+  <section style="background-color: #204367; margin-top: -2px;">
     <div class="about-cory-wrapper">
         <img src="assets/cory-circle.png" style="width: 300px; height: 300px; margin-right: 50px;"/>
         <span>
@@ -47,6 +57,37 @@
   </section>
 
   <section>
+    <div class="press-container">
+      
+      <div class="press-block-wrapper" >
+        <div class="press-block" onclick="window.open('https://sanantonioreport.org/cory-basso-advertising/')">
+          <h5>"Brain behind H-E-B’s Spurs commercials launches new ad campaigns for local organizations "</h5>
+          <img src="https://i0.wp.com/sanantonioreport.org/wp-content/uploads/2021/08/SAReport-PrimaryLogo-1.png?w=2331&ssl=1" style="height: 75px; text-align: center;"><br><br>
+          <button>Read More</button>
+        </div>
+        <div class="press-block" onclick="window.open('https://www.prnewswire.com/news-releases/basso360-marketing--advertising-launches-campaigns-for-five-new-clients-301303273.html')">
+          <h5>"We're proud to work with Cory Basso, a long-time supporter of our group"</h5>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Cision_PRN_Teal.png" style="height: 75px; text-align: center;"><br><br>
+          <button >Read More</button>
+        </div>
+        <div id="read-more-text" onclick = "">
+          <span class="hoverme" style="display: flex; align-items: center; justify-content: center;">
+            <h2 style="line-height: 28px; font-size: 24px;">CORY IN THE PRESS</h2> &nbsp; &nbsp;
+            <img src="assets/right-arrow.svg" style="height: 100px;">
+          </span>
+  
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="about-team-section">
+    <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
+      <div style="width: 620px; text-align: center;">
+        <h1>Meet the Team</h1>
+      </div>
+    </div>
       <div class="about-team-wrapper">
           <div class="team-member">
               <img class="team-portrait" src="assets/megan-circle.png"/>

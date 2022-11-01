@@ -97,7 +97,7 @@ button:hover {border: 1px solid white; font-weight: 600; background-color: #2043
     color: white;
 }
 .hero-trim {
-    width: 100%; height: 200px; padding: 50px; 
+    width: 100%; height: 200px; padding: 100px; 
     background-image: url('assets/trim5.svg'); background-repeat: no-repeat;
      background-size: cover; 
 }
@@ -110,9 +110,8 @@ button:hover {border: 1px solid white; font-weight: 600; background-color: #2043
  text-transform: uppercase;
 }
 
-.vimeo-wrapper {margin-top: 75px; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; overflow: hidden;}
-.vimeo-wrapper iframe {width: 100vw; height: 56.25vw; min-height: 100vh; position: fixed; min-width: 177.77vh; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-
+#video-bg {width: 100%; height: 70vh; object-fit: contain; z-index: -1; display: flex; align-items: center; justify-content: center;}
+.video-wrapper {display: flex; object-fit: cover; align-items: center; pointer-events: none; justify-content: center; height: 100%;}
 
 @media only screen and (max-width: 850px){
     #main-logo-img {max-height: 100px;}
@@ -125,11 +124,13 @@ button:hover {border: 1px solid white; font-weight: 600; background-color: #2043
 
 .home-project-grid {display: flex; align-items: center; justify-content: center;}
 
-.project-block {width: 100%; height: 25vw; padding: 15px; display: flex; align-items: flex-end; justify-content: center; background-size: cover;}
+.project-block {width: 100%; height: 25vw; padding: 15px; text-align: center; display: flex; align-items: flex-end; justify-content: center; background-size: cover;}
+.project-block h4{text-align: center; width: 100%;}
 .project-block:hover {border: 2px solid white; transform: scale(1.1); cursor: pointer;}
 
 #project1-block {background-image: url('https://images.unsplash.com/photo-1525547867522-cf8070ed441c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')}
 #project1-block:hover {background-image: url('assets/hoverGIFS/beldon-sample.webp'); background-size: cover;}
+
 
 @media only screen and (max-width: 850px){
 .home-project-grid {display: block;}
@@ -309,7 +310,7 @@ section h1 {padding: 25px 50px;}
 
 #team-hero {
     display: flex; align-items: flex-end;
-    padding-top: 100px; background-image: url('assets/trim3.svg'); background-size: 100%; background-repeat: no-repeat; background-position: 100% 100%;
+    padding-top: 60px; background-image: url('assets/trim3.svg'); background-size: 100%; background-repeat: no-repeat; background-position: 100% 100%;
     height: 50vh; width: 100%; 
     h1 {background-color: white;}
 }
@@ -378,3 +379,4 @@ section h1 {padding: 25px 50px;}
     height: 50vh; width: 100%; 
     h1 {background-color: white;}
 }
+

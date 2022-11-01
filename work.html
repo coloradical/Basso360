@@ -12,28 +12,34 @@
 </head>
 <body>
 
-  <header id="main-header" class="box-shadow">
-    <div class="header-content">
-      <span id="main-logo"><img id="main-logo-img" onclick="location.href='index.html';" 
-        src="assets/360basso-motto.png"/></span>
-      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
+  <header id="main-header">
+    <div class="header-content" id="header-content">
+      <span id="main-logo"><img id="main-logo-img" onclick="location.href='home.html';" src="assets/360basso-motto.png"/></span>
+      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px;" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
   
       <div id="nav-container">
-        <div class="nav-container-content">
+        <div id="nav-container-content">
           <a class="nav-item" href="index.html">Home</a>
           <a class="active nav-item" href="work.html">Work</a>
           <a class="nav-item" href="approach.html">Approach</a>
           <a class="nav-item" href="team.html">Team</a>
           <a class="nav-item" href="contact.html">Contact</a>
-          <!-- <span class="social-span">
-            <a class="hoverme" href=""><img style="height: 18px;" src="assets/linkedin.svg"></a>
-            <a class="hoverme" href=""><img style="height: 18px;" src="assets/facebook.svg"></a>
-          </span> -->
         </div>
       </div>
-      
     </div>
   </header>
+
+  <div id="mobile-menu-dropdown" style="display: none; width: 100vw; height: calc(100vh - 150px);  background: #F1E9D4; position: absolute;">
+    <div style="height: 50%;margin-top: 10%; display: flex; align-items: center; justify-content: center;">
+      <div id="nav-container-content">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="active nav-item" href="work.html">Work</a>
+        <a class="nav-item" href="approach.html">Approach</a>
+        <a class="nav-item" href="team.html">Team</a>
+        <a class="nav-item" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
 
   <section id="work-title">
     <div>
@@ -61,7 +67,7 @@
           <h3 class="feature-num">01</h3>          
           <div class="work-project-wrapper">
             <div class="work-project-title">
-              <h3>Project Title</h3>
+              <h3>Beldon Leaf Guard</h3>
             </div>
             <div class="work-project-summary" style="color: white;">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>
@@ -74,7 +80,7 @@
           <h3 class="feature-num">02</h3>     
           <div class="work-project-wrapper">
             <div class="work-project-title">
-              <h3>Project Title</h3>
+              <h3>Texas A &amp; M University</h3>
             </div>
             <div class="work-project-summary" style="color: white;">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>
@@ -87,7 +93,7 @@
           <h3 class="feature-num">03</h3>     
           <div class="work-project-wrapper">
             <div class="work-project-title">
-              <h3>Project Title</h3>
+              <h3>Codeup</h3>
             </div>
             <div class="work-project-summary" style="color: white;">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>
@@ -101,7 +107,7 @@
           <h3 class="feature-num">04</h3>     
           <div class="work-project-wrapper">
             <div class="work-project-title">
-              <h3>Project Title</h3>
+              <h3>Witte Museum</h3>
             </div>
             <div class="work-project-summary" style="color: white;">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste optio doloremque animi. Blanditiis laudantium qui nostrum excepturi minus eligendi inventore quod deleniti itaque mollitia, quae libero. Dolorem, voluptatibus maxime?</p>

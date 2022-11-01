@@ -7,19 +7,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="index.js"></script>
+
 
 
 </head>
 <body>
 
   <header id="main-header">
-    <div class="header-content">
-      <span id="main-logo"><img id="main-logo-img" onclick="location.href='index.html';" 
-        src="assets/360basso-motto.png"/></span>
-      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
+    <div class="header-content" id="header-content">
+      <span id="main-logo"><img id="main-logo-img" onclick="location.href='home.html';" src="assets/360basso-motto.png"/></span>
+      <span id="mobile-menu" style="display: none"><img id="mobile-menu-img" style="height: 35px;" class="hoverme" src="assets/menu.svg" onclick="toggleMobileMenu()"/></span>
   
       <div id="nav-container">
-        <div class="nav-container-content">
+        <div id="nav-container-content">
           <a class="nav-item" href="index.html">Home</a>
           <a class="nav-item" href="work.html">Work</a>
           <a class="nav-item" href="approach.html">Approach</a>
@@ -27,16 +28,47 @@
           <a class="active nav-item" href="contact.html">Contact</a>
         </div>
       </div>
-      
     </div>
   </header>
+
+  <div id="mobile-menu-dropdown" style="display: none; width: 100vw; height: calc(100vh - 150px);  background: #F1E9D4; position: absolute;">
+    <div style="height: 50%;margin-top: 10%; display: flex; align-items: center; justify-content: center;">
+      <div id="nav-container-content">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="work.html">Work</a>
+        <a class="nav-item" href="approach.html">Approach</a>
+        <a class="nav-item" href="team.html">Team</a>
+        <a class="active nav-item" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
 
   <section id="contact-hero">
     <h1>Contact</h1>
   </section>
 
-<section style="background-color: #1D3C5D; margin-top: -20px; padding: 50px; color: white;">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi commodi sequi ratione ducimus, perferendis ipsa deserunt dignissimos distinctio expedita laudantium quibusdam! Culpa delectus velit magnam perspiciatis odio? Quasi, incidunt voluptatem!</p>
+<section style="background-color: #204367; margin-top: -20px; padding: 50px; color: white;">
+    <p>Want to get in touch with Cory about how Basso360 can help your business? Send an email, make a call or connect on social media. </p>
+</section>
+
+<section style="padding: 0px 50px 50px 50px; background-color: #204367;">
+  <div id="contact-container" >
+    <div class="contact-box" onclick="window.open ('mailto:cory@basso360.com')">
+      <img src="assets/email.svg" style="height: 50px;">
+      <h4>cory@basso360.com</h4>
+    </div>
+    <div class="contact-box" onclick="window.open ('tel:2106634030')">
+      <img src="assets/phone.svg" style="height: 60px;">
+      <h4>(210) 663-4030</h4>
+    </div>
+    <div class="contact-box" onclick="window.open ( 'https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiZ66jW8f_6AhXNkYkEHQBlB2YQFnoECBEQAQ&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcory-basso-aa81a31b9&usg=AOvVaw0WqRZPiTFTVwnwJW6coM8b')">
+      <img src="assets/linkedin.svg" style="height: 50px;">
+      <h4>Cory on LinkedIn</h4>
+    </div>
+  
+  </div>
+
 </section>
 
 
